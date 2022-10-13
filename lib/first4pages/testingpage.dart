@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:rwp_police/first4pages/1st_page.dart';
+import 'package:rwp_police/first4pages/registeration%20page/otp.dart';
 
-class SecondPage extends StatefulWidget {
-  const SecondPage({Key? key}) : super(key: key);
+class ThirdPage extends StatefulWidget {
+  const ThirdPage({Key? key}) : super(key: key);
 
   @override
-  State<SecondPage> createState() => _SecondPageState();
+  State<ThirdPage> createState() => _ThirdPageState();
 }
-class _SecondPageState extends State<SecondPage> {
+
+class _ThirdPageState extends State<ThirdPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +20,12 @@ class _SecondPageState extends State<SecondPage> {
           child: Column(
             children: [
               Image.asset("assets/img.png", width: 300),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
+
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Colors.pink.shade300,
+                  color: Colors.red,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
@@ -78,16 +82,16 @@ class _SecondPageState extends State<SecondPage> {
                               onPressed: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                      builder: (context) => const SecondPage()),
+                                      builder: (context) => const ThirdPage()),
                                 );
                               },
                               style: ButtonStyle(
                                 foregroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.white),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.white),
                                 backgroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.purple),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.purple),
                                 shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                   RoundedRectangleBorder(

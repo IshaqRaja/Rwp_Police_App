@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'custom_widget/custom_button.dart';
-import 'custom_widget/customroundimage_widget.dart';
-import 'first4pages/4th_page.dart';
-import 'myhomepage.dart';
-
+import 'package:rwp_police/first4pages/2nd_page.dart';
+import 'first4pages/1st_page.dart';
+import 'first4pages/registeration page/otp.dart';
+import 'first4pages/welcome.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -17,11 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      title: "RawalPindi Police App",
+      title: "Rawalpindi Police App",
       theme: ThemeData(
       // brightness: Brightness.dark,
       ),
-      home: const CustomRoundImage(),
+      home: const OTP(),
     );
   }
 }
