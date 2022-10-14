@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key}) : super(key: key);
+class ThirdPage extends StatelessWidget {
+  const ThirdPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +16,12 @@ class FirstPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.black,style: BorderStyle.solid,width: 5),
               image: const DecorationImage(
-              image: AssetImage('assets/img.png'),
-            fit: BoxFit.fill
+                  image: AssetImage('assets/img.png'),
+                  fit: BoxFit.fill
               ),
             ),
             height: 1500,
-              width: 1500,
+            width: 1500,
           ),
         )
     );
